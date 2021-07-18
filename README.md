@@ -18,7 +18,7 @@ Installing Rust from
 VS-Code
 * rust-lang.rust Extension
 * Rust Language Server
-## Getting Started on Rust
+## Getting Started with Rust
 [Rust Getting Started Book](https://doc.rust-lang.org/book)
 ### Chapter I - Hello Cargo
 Content is stored in `./hello_cargo`.
@@ -48,6 +48,19 @@ Learnings
 * Checkout Comments in `./guessing_game/src/main.rs` on how to use arms pattern for error handling 
 * `_` is used to take every value
 * Introduction of the keywords `loop`, `break` and `continue` for looping
+
+### Chapter III - Variables
+Content is stored in `./variables`
+
+Learnings
+* Variables are immutable but can be made mutable with the `mut` keyword `let mut x = 5`
+* With shadowing you can overwrite variables
+```rust
+let x = 5
+println!("x={}", x) // out: "x=5"
+let x = x*2
+println!("x={}", x) // out: "x=10"
+```
 # Interesting Repositories
 
 * [Rustlings](https://github.com/rust-lang/rustlings) lovely curated learning exercises for rust
